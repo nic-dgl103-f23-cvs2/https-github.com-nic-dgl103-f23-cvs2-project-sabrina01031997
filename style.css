@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.logo {
+    height: 50px; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hero {
+    background-image: url('images/profile.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* will be adjustes as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 2em;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 20px;
+}
+
+.info-block {
+    width: 30%;
+    margin: 0 10px;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.info-button {
+    display: block;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 50px;
+}
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    border-top: 1px
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+/* styles for a button */
+.btn {
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0057b8;
+}
+
+/* Utility classes for margin and padding */
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }
+.pt-20 { padding-top: 20px; }
+.pb-20 { padding-bottom: 20px; }
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .hero, .content, .footer-content, .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero, .content {
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .info-block {
+        width: auto;
+    }
+}
+
