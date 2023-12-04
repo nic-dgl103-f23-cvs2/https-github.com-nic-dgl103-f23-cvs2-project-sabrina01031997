@@ -1,143 +1,245 @@
+/* Base styles for mobile */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background: #f9fafa;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px;
+    padding: 10px;
+    background: white;
 }
 
-.logo {
-    height: 50px; 
+header img {
+    width: 50px; /* Adjust as per your logo's size */
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
+    list-style: none;
+    padding: 0;
 }
 
-nav ul li {
-    margin-left: 20px;
+nav li {
+    display: inline-block;
+    margin-right: 10px;
 }
 
-nav ul li a {
-    color: #fff;
+nav a {
     text-decoration: none;
-    text-transform: uppercase;
+    color: #333;
+    font-size: 14px;
 }
 
-.hero {
-    background-image: url('images/profile.png');
+#hero {
+    background-image: url('images/profile.png'); /* Replace with your path */
     background-size: cover;
     background-position: center;
-    height: 300px; /* will be adjustes as needed */
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+#service-offerings {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
 }
 
-.hero h1 {
-    color: #fff;
-    font-size: 2em;
-}
-
-.content {
-    display: flex;
-    justify-content: space-around;
-    background-color: #f4f4f4; /* Light grey background */
-    padding: 20px;
-}
-
-.info-block {
-    width: 30%;
-    margin: 0 10px;
+.service {
     background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.service h2 {
+    color: #333;
+}
+
+#about, #contact {
     padding: 20px;
     text-align: center;
 }
 
-.info-button {
-    display: block;
-    background-color: green;
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #333;
     color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-top: 10px;
+    padding: 10px;
+    border: none;
 }
 
 footer {
     background-color: #333;
     color: white;
-    padding: 20px 50px;
+    text-align: center;
+    padding: 10px;
 }
 
-.footer-content {
+/*.............Our Team.............*/
+
+
+/* Team Banner Styles */
+#team-banner {
+    background-color: #296356;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Team Members Styles */
+#team-members {
+    display: flex;
+    flex-direction: column; /* Stack team members vertically on mobile */
+    align-items: center; /* Center align team member cards */
+    padding: 20px;
+}
+
+.member {
+    width: 90%; /* Takes up most of the screen width on mobile */
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+    background: #296356;
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.member img {
+    width: 120px; /* Adjust image size for mobile */
+    height: auto;
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/*..........................*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.portfolio-header {
+    background-color: #4CAF50; /* Adjust the color to match your brand */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.project {
+    width: 30%; /* Adjust based on your preferred layout and number of columns */
     margin-bottom: 20px;
 }
 
-.read-more {
+.project img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project h2 {
+    text-align: center;
+    color: #333;
+}
+/*..........................*/
+
+.portfolio-header {
+    background-color: #4CAF50; /* or the color that matches your brand */
     color: white;
-    text-decoration: none;
+    padding: 20px;
+    text-align: center;
 }
 
-.footer-bottom {
-    border-top: 1px
+.portfolio-content {
+    padding: 20px;
 }
 
-.footer-bottom {
-    border-top: 1px solid #444;
-    padding-top: 10px;
+.portfolio-item {
+    margin-bottom: 40px;
 }
 
-/* styles for a button */
-.btn {
-    background-color: #0066cc;
-    color: #ffffff;
-    padding: 10px 15px;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.portfolio-item h2 {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.btn:hover {
-    background-color: #0057b8;
+.portfolio-item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Utility classes for margin and padding */
-.mt-20 { margin-top: 20px; }
-.mb-20 { margin-bottom: 20px; }
-.pt-20 { padding-top: 20px; }
-.pb-20 { padding-bottom: 20px; }
+/* Existing styles above... */
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .hero, .content, .footer-content, .footer-bottom {
-        flex-direction: column;
-        text-align: center;
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    header img {
+        width: 80px; /* Larger size for larger screens */
     }
 
-    .hero, .content {
-        padding: 20px;
+    nav a {
+        font-size: 16px;
     }
 
-    nav ul {
-        flex-direction: column;
+    #hero {
+        padding: 150px 20px;
     }
 
-    nav ul li {
-        margin: 10px 0;
+    #service-offerings {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    .info-block {
-        width: auto;
+    .service {
+        width: 30%;
+    }
+
+    #contact form {
+        max-width: 500px;
+        margin: auto;
     }
 }
-
