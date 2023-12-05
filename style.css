@@ -15,7 +15,7 @@ header {
 }
 
 header img {
-    width: 50px; /* Adjust as per your logo's size */
+    width: 50px; /* Adjusted as per logo's size */
 }
 
 nav ul {
@@ -30,12 +30,12 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #296356;
     font-size: 14px;
 }
 
 #hero {
-    background-image: url('images/profile.png'); /* Replace with your path */
+    background-image: url('images/profile.png');
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
@@ -50,7 +50,7 @@ nav a {
 }
 
 .service {
-    background: #fff;
+    background: rgb(41 99 86);
     margin-bottom: 20px;
     padding: 20px;
     text-align: center;
@@ -58,7 +58,13 @@ nav a {
 }
 
 .service h2 {
-    color: #333;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.service p {
+    color: white;
+    margin: 10px;
 }
 
 #about, #contact {
@@ -93,7 +99,6 @@ footer {
 
 /*.............Our Team.............*/
 
-
 /* Team Banner Styles */
 #team-banner {
     background-color: #296356;
@@ -115,12 +120,12 @@ footer {
     margin: 10px 0;
     padding: 20px;
     text-align: center;
-    background: #296356;
+    background: white;
     border-radius: 8px; /* Optional: adds rounded corners */
 }
 
 .member img {
-    width: 120px; /* Adjust image size for mobile */
+    width: 120px; /* Adjusted image size for mobile */
     height: auto;
     border-radius: 50%; /* Circular images */
     margin-bottom: 10px;
@@ -135,7 +140,8 @@ footer {
 }
 
 
-/*..........................*/
+/*...........Portfolio...............*/
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -144,7 +150,7 @@ body {
 }
 
 .portfolio-header {
-    background-color: #4CAF50; /* Adjust the color to match your brand */
+    background-color: #296356; /* Adjusted the color to match my brand */
     color: white;
     padding: 20px;
     text-align: center;
@@ -158,12 +164,12 @@ body {
 }
 
 .project {
-    width: 30%; /* Adjust based on your preferred layout and number of columns */
+    width: 30%; /* Adjusted based on preferred layout and number of columns */
     margin-bottom: 20px;
 }
 
 .project img {
-    width: 100%; /* Ensure images are responsive */
+    width: 100%; /* Images are responsive */
     height: auto;
     margin-bottom: 10px;
 }
@@ -173,13 +179,6 @@ body {
     color: #333;
 }
 /*..........................*/
-
-.portfolio-header {
-    background-color: #4CAF50; /* or the color that matches your brand */
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
 
 .portfolio-content {
     padding: 20px;
@@ -202,7 +201,97 @@ body {
     margin-right: auto;
 }
 
-/* Existing styles above... */
+
+/*...........Contact Us...............*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+
+.contact-header {
+    background-color: #296356; /* Adjusted the color to match my brand */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.company-logo {
+    background-color: #296356;
+
+    display: block;
+    margin: 0 auto; /* Centering the logo */
+}
+
+.contact-info {
+    background-color: #296356;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+   color: #fff;
+    text-decoration: none;
+}
+
+.contact-form {
+    background-color: #296356;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #df4f27;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #df4f27ba;
+}
+
+@media (max-width: px) {
+    .contact-form {
+        padding: 15px;
+    }
+}
+
+
+/*....................*/
 
 footer {
     background-color: #333; /* Dark background for the footer */
@@ -210,10 +299,6 @@ footer {
     padding: 20px;
     text-align: center;
 }
-
-
-
-
 
 /* Media queries for larger screens */
 @media (min-width: 768px) {

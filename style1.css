@@ -1,0 +1,72 @@
+
+
+/* Style the main header */
+.main-header {
+    background-color: #00453a;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 36px; /* or 2.25rem for better scalability */
+    margin-bottom: 5px; /* Creates space below the title */
+}
+
+/* Style the main content area */
+/* ... other styles ... */
+
+/* Flexbox container for the content */
+.content {
+    display: flex;
+    flex-direction: column; /* Stack flex items vertically */
+    align-items: center; /* Center align the flex items horizontally */
+    width: 80%;
+    margin: 10px auto;
+}
+
+/* Flexbox container for each section */
+.flex-section {
+    display: flex;
+    flex-direction: row; /* Arrange flex items side by side */
+    justify-content: center; /* Center items along the horizontal axis */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Wrap items to next line on small screens */
+}
+
+.section-image {
+    flex: 1; /* Allows the image to grow and shrink */
+    max-width: 50%; /* Maximum width of the image */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.section-text-h2 {
+    
+    text-align: center;
+    
+}
+
+.section-text {
+    flex: 2; /* Allows text section to take twice the space of the image */
+    padding: 20px;
+    text-align: left;
+    max-width: 50%;
+}
+
+/* ... other styles ... */
+
+@media (max-width: 768px) {
+    .content {
+        width: 95%;
+    }
+
+    .flex-section {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .section-image, .section-text {
+        max-width: 100%; /* Allow image and text to fill the container on small screens */
+    }
+}
