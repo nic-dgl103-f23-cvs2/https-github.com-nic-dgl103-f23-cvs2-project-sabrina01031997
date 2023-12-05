@@ -1,72 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-/* Style the main header */
 .main-header {
     background-color: #00453a;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px;
     text-align: center;
 }
 
-.main-header h1 {
-    font-size: 36px; /* or 2.25rem for better scalability */
-    margin-bottom: 5px; /* Creates space below the title */
-}
-
-/* Style the main content area */
-/* ... other styles ... */
-
-/* Flexbox container for the content */
 .content {
     display: flex;
-    flex-direction: column; /* Stack flex items vertically */
-    align-items: center; /* Center align the flex items horizontally */
-    width: 80%;
-    margin: 10px auto;
-}
-
-/* Flexbox container for each section */
-.flex-section {
-    display: flex;
-    flex-direction: row; /* Arrange flex items side by side */
-    justify-content: center; /* Center items along the horizontal axis */
-    align-items: center; /* Align items vertically */
-    margin-bottom: 20px;
-    flex-wrap: wrap; /* Wrap items to next line on small screens */
-}
-
-.section-image {
-    flex: 1; /* Allows the image to grow and shrink */
-    max-width: 50%; /* Maximum width of the image */
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.section-text-h2 {
-    
-    text-align: center;
-    
-}
-
-.section-text {
-    flex: 2; /* Allows text section to take twice the space of the image */
+    flex-direction: column; /* Stack columns vertically on mobile */
+    align-items: center; /* Center-align items */
     padding: 20px;
-    text-align: left;
-    max-width: 50%;
 }
 
-/* ... other styles ... */
+.column {
+    margin-bottom: 20px; /* Space between columns */
+}
 
-@media (max-width: 768px) {
+.column img {
+    max-width: 100%; /* Full width of the column */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px 0; 
+}
+
+.column h2 {
+    font-size: 24px; /* Larger text for readability on mobile */
+    color: #00453a;
+    margin: 10px 0; /* Spacing around heading */
+    text-align: center;
+}
+
+.column p {
+    padding: 0 10px; /* Padding around text for readability */
+    text-align: left;
+    margin: 10px 0;  
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow gallery images to wrap */
+    justify-content: center; /* Center images */
+    padding: 10px;
+}
+
+.gallery img {
+    width: 100px; /* Set a fixed width for gallery images */
+    height: auto;
+    margin: 10px; /* Space around gallery images */
+}
+
+/* Adjustments for larger screens can be made with a media query */
+@media (min-width: 768px) {
     .content {
-        width: 95%;
+        flex-direction: row; /* Side-by-side columns on larger screens */
     }
 
-    .flex-section {
-        flex-direction: column; /* Stack items vertically on small screens */
+    .column {
+        flex: 1; /* Equal width columns */
+        margin-bottom: 0; /* Remove bottom margin */
     }
 
-    .section-image, .section-text {
-        max-width: 100%; /* Allow image and text to fill the container on small screens */
+    .gallery img {
+        width: auto; /* Auto width for larger screens */
+        max-width: 100%; /* Ensure images don't exceed their container */
     }
 }

@@ -291,7 +291,76 @@ button:hover {
 }
 
 
-/*....................*/
+/*.........Build & Deign...........*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.main-header {
+    background-color: #00453a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Stack columns vertically on mobile */
+    align-items: center; /* Center-align items */
+    padding: 20px;
+}
+
+.column {
+    margin-bottom: 20px; /* Space between columns */
+}
+
+.column img {
+    max-width: 100%; /* Full width of the column */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px 0; 
+}
+
+.column h2 {
+    font-size: 24px; /* Larger text for readability on mobile */
+    color: #00453a;
+    margin: 10px 0; /* Spacing around heading */
+    text-align: center;
+}
+
+.column p {
+    padding: 0 10px; /* Padding around text for readability */
+    text-align: left;
+    margin: 10px 0;  
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow gallery images to wrap */
+    justify-content: center; /* Center images */
+    padding: 10px;
+}
+
+.gallery img {
+    width: 100px; /* Set a fixed width for gallery images */
+    height: auto;
+    margin: 10px; /* Space around gallery images */
+}
+
+
+/*.........Design & Build...........*/
+
+
+
 
 footer {
     background-color: #333; /* Dark background for the footer */
