@@ -1,21 +1,88 @@
-/* Base styles for mobile */
+/*.............Home Page...................*/
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9fafa;
+    background: #aac6c6;
 }
 
-header {
+.site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+    background-color: #aac6c6;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.company-name {
+    font-size: 1.5rem; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #296356;
+}
+
+.site-navigation ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.site-navigation ul li {
+    margin: 0 10px;
+}
+
+.site-navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .branding {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-name {
+        font-size: 1.2rem; 
+    }
+
+    .site-navigation ul {
+        flex-direction: column;
+    }
+
+    .site-navigation ul li {
+        margin: 5px 0; 
+    }
+}
+
+html {
+    font-size: 62.5%;
+  }
+
+header {
+    display: flex;
+    align-items: center;
     padding: 10px;
     background: white;
+    justify-content: space-between;
 }
 
 header img {
-    width: 50px; /* Adjusted as per logo's size */
+    width: 50px; 
 }
 
 nav ul {
@@ -31,17 +98,28 @@ nav li {
 nav a {
     text-decoration: none;
     color: #296356;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 #hero {
-    background-image: url('images/profile.png');
+    background: url('images/profile.png') no-repeat center center;
     background-size: cover;
-    background-position: center;
-    padding: 100px 20px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: white;
+    color: #ffffff; 
 }
+.hero-title {
+    position: absolute; 
+    bottom: 50%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: rgba(41, 99, 86, 0.71); 
+    width: 100%; 
+    font-size: 1.6rem;
+    padding: 10px; 
+  }
 
 #service-offerings {
     display: flex;
@@ -59,7 +137,7 @@ nav a {
 
 .service h2 {
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .service p {
@@ -68,8 +146,25 @@ nav a {
 }
 
 #about, #contact {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    margin-top: 10px;
+}
+
+#about h2 {
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px;
+}
+#about p {
+    color: #333; 
+    margin-bottom: 10px;
+}
+
+#contact h2 {
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px;
 }
 
 #contact form {
@@ -99,7 +194,8 @@ footer {
 
 /*.............Our Team.............*/
 
-/* Team Banner Styles */
+/* This is Team Banner Styles */
+
 #team-banner {
     background-color: #296356;
     color: white;
@@ -107,31 +203,33 @@ footer {
     text-align: center;
 }
 
-/* Team Members Styles */
+/* This is team Members Styles */
+
 #team-members {
     display: flex;
-    flex-direction: column; /* Stack team members vertically on mobile */
-    align-items: center; /* Center align team member cards */
+    flex-direction: column; 
+    align-items: center; 
     padding: 20px;
 }
 
 .member {
-    width: 90%; /* Takes up most of the screen width on mobile */
+    width: 90%; 
     margin: 10px 0;
     padding: 20px;
     text-align: center;
     background: white;
-    border-radius: 8px; /* Optional: adds rounded corners */
+    border-radius: 8px; 
 }
 
 .member img {
-    width: 120px; /* Adjusted image size for mobile */
+    width: 120px; 
     height: auto;
-    border-radius: 50%; /* Circular images */
+    border-radius: 50%;
     margin-bottom: 10px;
 }
 
 /* Footer Styles */
+
 footer {
     background-color: #333;
     color: white;
@@ -139,18 +237,10 @@ footer {
     padding: 10px;
 }
 
-
 /*...........Portfolio...............*/
 
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .portfolio-header {
-    background-color: #296356; /* Adjusted the color to match my brand */
+    background-color: #296356; 
     color: white;
     padding: 20px;
     text-align: center;
@@ -164,12 +254,12 @@ body {
 }
 
 .project {
-    width: 30%; /* Adjusted based on preferred layout and number of columns */
+    width: 30%; 
     margin-bottom: 20px;
 }
 
 .project img {
-    width: 100%; /* Images are responsive */
+    width: 100%; 
     height: auto;
     margin-bottom: 10px;
 }
@@ -178,7 +268,6 @@ body {
     text-align: center;
     color: #333;
 }
-/*..........................*/
 
 .portfolio-content {
     padding: 20px;
@@ -201,17 +290,17 @@ body {
     margin-right: auto;
 }
 
-
 /*...........Contact Us...............*/
 
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;   
+    padding: 0; 
+    font-size: 14px;  
 }
 
 .contact-header {
-    background-color: #296356; /* Adjusted the color to match my brand */
+    background-color: #296356; 
     color: white;
     padding: 20px;
     text-align: center;
@@ -222,7 +311,7 @@ body {
     background-color: #296356;
 
     display: block;
-    margin: 0 auto; /* Centering the logo */
+    margin: 0 auto; 
 }
 
 .contact-info {
@@ -284,27 +373,28 @@ button:hover {
     background-color: #df4f27ba;
 }
 
-@media (max-width: px) {
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-top: 50%; /* This percentage is for ratio of the map */
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:768px) {
     .contact-form {
         padding: 15px;
     }
 }
 
-
-/*.........Build & Deign...........*/
-
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
+/*.........Build & Deign also Special features ...........*/
 
 .main-header {
     background-color: #00453a;
@@ -315,64 +405,60 @@ body {
 
 .content {
     display: flex;
-    flex-direction: column; /* Stack columns vertically on mobile */
-    align-items: center; /* Center-align items */
+    flex-direction: column; 
+    align-items: center; 
     padding: 20px;
 }
 
 .column {
-    margin-bottom: 20px; /* Space between columns */
+    margin-bottom: 20px; 
 }
 
 .column img {
-    max-width: 100%; /* Full width of the column */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px 0; 
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
 }
 
 .column h2 {
-    font-size: 24px; /* Larger text for readability on mobile */
+    font-size: 16px; 
     color: #00453a;
-    margin: 10px 0; /* Spacing around heading */
+    margin: 10px 0; 
     text-align: center;
 }
 
 .column p {
-    padding: 0 10px; /* Padding around text for readability */
+    padding: 0 10px; 
     text-align: left;
-    margin: 10px 0;  
+    margin: 10px 0;
+    text-align: center;  
 }
 
 .gallery {
     display: flex;
-    flex-wrap: wrap; /* Allow gallery images to wrap */
-    justify-content: center; /* Center images */
+    flex-wrap: wrap; 
+    justify-content: center; 
     padding: 10px;
 }
 
 .gallery img {
-    width: 100px; /* Set a fixed width for gallery images */
+    width: 100px; 
     height: auto;
-    margin: 10px; /* Space around gallery images */
+    margin: 10px; 
 }
 
-
-/*.........Design & Build...........*/
-
-
-
-
 footer {
-    background-color: #333; /* Dark background for the footer */
+    background-color: #333; 
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-/* Media queries for larger screens */
+/* This is Media queries for larger screens */
+
 @media (min-width: 768px) {
     header img {
-        width: 80px; /* Larger size for larger screens */
+        width: 80px; 
     }
 
     nav a {
