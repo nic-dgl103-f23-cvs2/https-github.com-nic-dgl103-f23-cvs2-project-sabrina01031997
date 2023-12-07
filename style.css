@@ -159,12 +159,43 @@ nav a {
     height: auto; 
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .video {
       height: auto; 
       padding: 10px; 
     }
   }
+
+
+  /* This is Media queries for larger screens */
+
+@media (min-width: 768px) {
+    header img {
+        width: 80px; 
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    #hero {
+        padding: 150px 20px;
+    }
+
+    #service-offerings {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .service {
+        width: 30%;
+    }
+
+    #contact form {
+        max-width: 500px;
+        margin: auto;
+    }
+}
   
 #about, #contact {
     padding: 10px;
@@ -454,30 +485,22 @@ button:hover {
     text-align: center;
 }
 
-
-.content {
-    flex-direction: row; 
-    justify-content: center; 
-}
-
 .content {
     display: flex;
     flex-direction: column; 
-    align-items: center;
-    justify-content: center; 
+    align-items: center; 
     padding: 20px;
 }
 
 .column {
     margin-bottom: 20px; 
-    max-width: 50%; 
 }
 
 .column img {
     max-width: 100%; 
     width: auto;
     height: auto; 
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .column h2 {
@@ -515,32 +538,15 @@ footer {
     text-align: center;
 }
 
-/* This is Media queries for larger screens */
-
-@media (min-width: 768px) {
-    header img {
-        width: 80px; 
+@media (min-width: 768px) { /* Adjust as needed for your design */
+    .content {
+      flex-direction: column; /* Places the columns side by side on larger screens */
+      justify-content: center; /* Centers the columns horizontally */
     }
-
-    nav a {
-        font-size: 16px;
+    .column {
+      /* Optional: Set a max-width if you want to limit the width of the columns */
+      max-width: 50%;
     }
+  }
 
-    #hero {
-        padding: 150px 20px;
-    }
 
-    #service-offerings {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .service {
-        width: 30%;
-    }
-
-    #contact form {
-        max-width: 500px;
-        margin: auto;
-    }
-}
