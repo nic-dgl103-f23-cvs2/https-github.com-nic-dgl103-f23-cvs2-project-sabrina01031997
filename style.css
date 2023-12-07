@@ -1,0 +1,552 @@
+/*.............Home Page...................*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #aac6c6;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #aac6c6;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.company-name {
+    font-size: 1.6rem; 
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #296356;
+}
+
+.site-navigation ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.site-navigation ul li {
+    margin: 0 10px;
+}
+
+.site-navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .branding {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-name {
+        font-size: 1.2rem; 
+    }
+
+    .site-navigation ul {
+        flex-direction: column;
+    }
+
+    .site-navigation ul li {
+        margin: 5px 0; 
+    }
+}
+
+html {
+    font-size: 62.5%;
+  }
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    justify-content: space-between;
+}
+
+header img {
+    width: 50px; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #296356;
+    font-size: 1rem;
+}
+
+#hero {
+    background: url('images/profile.png') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; 
+}
+.hero-title {
+    position: absolute; 
+    bottom: 50%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: rgba(41, 99, 86, 0.71); 
+    width: 100%; 
+    font-size: 1.6rem;
+    padding: 10px; 
+  }
+
+#service-offerings {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.service {
+    background: rgb(41 99 86);
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.service h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: white;
+    margin: 10px;
+}
+
+.video {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+  }
+  
+  video {
+    width: 100%; 
+    max-width: 800px;
+    height: auto; 
+  }
+  
+  @media (max-width: 768px) {
+    .video {
+      height: auto; 
+      padding: 10px; 
+    }
+  }
+
+
+  /* This is Media queries for larger screens */
+
+@media (min-width: 768px) {
+    header img {
+        width: 80px; 
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    #hero {
+        padding: 150px 20px;
+    }
+
+    #service-offerings {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .service {
+        width: 30%;
+    }
+
+    #contact form {
+        max-width: 500px;
+        margin: auto;
+    }
+}
+  
+#about, #contact {
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#about h2 {
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px;
+}
+#about p {
+    color: #333; 
+    margin-bottom: 10px;
+}
+
+#contact h2 {
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*.............Our Team.............*/
+
+/* This is Team Banner Styles */
+
+#team-banner {
+    background-color: #296356;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* This is team Members Styles */
+
+#team-members {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px;
+}
+
+.member {
+    width: 90%; 
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 8px; 
+}
+
+.member img {
+    width: 120px; 
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*...........Portfolio...............*/
+
+.portfolio-header {
+    background-color: #296356; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/*...........Table Style..............*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  td img {
+    max-width: 100%;
+    max-height: 600px;
+    width: auto; 
+    height: auto; 
+  }
+  
+  .project-column, .cost-column {
+    width: 20%; 
+  }
+  
+  .image-column {
+    width: 60%; /* Adjusted for desktop */
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .project-column, .cost-column {
+      width: 20%; 
+      font-size: 14px; 
+    }
+  
+    .image-column {
+      width: 60%; 
+    }
+  
+    td img {
+      max-width: 100%; 
+      height: auto; 
+    }
+  }
+
+/*...........Contact Us...............*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    font-size: 14px;  
+}
+
+.contact-header {
+    background-color: #296356; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.company-logo {
+    background-color: #296356;
+    display: block;
+    margin: 0 auto; 
+}
+
+.contact-info {
+    background-color: #296356;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    width: 100%; 
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+   color: #fff;
+    text-decoration: none;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; 
+    background-color: #296356; 
+    padding: 50px;
+}
+
+.contact-form {
+    background-color: #fff; 
+    color: #fff;
+    padding: 0px;
+    width: 100%;
+    max-width: 500px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    margin: 0 auto; 
+}
+
+.contact-form {
+    background-color: #296356;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    margin: 0px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #df4f27;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #df4f27ba;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-top: 50%; /* Ratio of the map */
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:768px) {
+    .contact-form {
+        padding: 15px;
+    }
+}
+
+/*.........Build & Deign also Special features ...........*/
+
+.main-header {
+    background-color: #00453a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px;
+}
+
+.column {
+    margin-bottom: 20px; 
+}
+
+.column img {
+    max-width: 100%; 
+    width: auto;
+    height: auto; 
+    margin-bottom: 10px;
+}
+
+.column h2 {
+    font-size: 16px; 
+    color: #00453a;
+    margin: 10px 0; 
+    text-align: center;
+}
+
+.column p {
+    padding: 0 10px; 
+    text-align: left;
+    margin: 10px 0;
+    text-align: center;  
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 10px;
+}
+
+.gallery img {
+    width: 100px;
+    max-width: 100%; 
+    height: auto;
+    margin: 10px; 
+}
+
+footer {
+    background-color: #333; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px) { /* Adjust as needed for your design */
+    .content {
+      flex-direction: column; /* Places the columns side by side on larger screens */
+      justify-content: center; /* Centers the columns horizontally */
+    }
+    .column {
+      /* Optional: Set a max-width if you want to limit the width of the columns */
+      max-width: 50%;
+    }
+  }
+
+
